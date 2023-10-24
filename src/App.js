@@ -1,11 +1,12 @@
+import LoginForm from './components/LoginForm';
 import './App.css';
 
 
 const App = () => {
-  return (
-    <div>
+  if (!localStorage.getItem('username')) return <LoginForm />;
 
-    </div>
+  return (
+    <div></div>
   );
 };
 
